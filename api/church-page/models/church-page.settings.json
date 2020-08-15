@@ -44,6 +44,12 @@
     "whatToExpectText": {
       "type": "text",
       "required": true
+    },
+    "team": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.image-title-text",
+      "required": true
     }
   }
 }

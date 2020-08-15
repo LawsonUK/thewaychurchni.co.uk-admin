@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "live_pages",
+  "info": {
+    "name": "live page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "videoLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

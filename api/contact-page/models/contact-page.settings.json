@@ -42,7 +42,7 @@
       "component": "images.gallery"
     },
     "email": {
-      "type": "string",
+      "type": "email",
       "required": true
     }
   }
