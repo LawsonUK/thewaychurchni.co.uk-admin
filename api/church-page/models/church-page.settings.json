@@ -17,30 +17,32 @@
       "type": "component",
       "repeatable": true,
       "component": "images.gallery",
-      "required": true,
-      "min": 5
-    },
-    "ourStory": {
-      "type": "component",
-      "repeatable": false,
-      "component": "text.title-and-text",
       "required": true
     },
-    "beliefTitle": {
+    "ourStoryTitle": {
       "type": "string",
       "required": true
     },
-    "beliefs": {
-      "type": "dynamiczone",
-      "components": [
-        "text.title-and-text"
-      ],
+    "ourStoryText": {
+      "type": "text",
       "required": true
     },
-    "whatToExpect": {
+    "beliefsTitle": {
+      "type": "string",
+      "required": true
+    },
+    "whatWeBelieve": {
       "type": "component",
-      "repeatable": false,
-      "component": "text.title-and-text",
+      "repeatable": true,
+      "component": "content.title-text",
+      "required": true
+    },
+    "whatToExpectTitle": {
+      "type": "string",
+      "required": true
+    },
+    "whatToExpectText": {
+      "type": "text",
       "required": true
     }
   }

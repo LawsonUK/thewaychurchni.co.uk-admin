@@ -17,10 +17,6 @@
       "type": "string",
       "required": true
     },
-    "contactDetails": {
-      "type": "richtext",
-      "required": true
-    },
     "address": {
       "type": "text",
       "required": true
@@ -44,6 +40,10 @@
       "type": "component",
       "repeatable": false,
       "component": "images.gallery"
+    },
+    "email": {
+      "type": "string",
+      "required": true
     }
   }
 }

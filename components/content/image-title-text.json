@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_content_image_title_texts",
+  "info": {
+    "name": "image title text",
+    "icon": "file-invoice"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
