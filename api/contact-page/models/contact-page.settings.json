@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "name": "contact page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subTitle": {
+      "type": "string",
+      "required": true
+    },
+    "contactDetails": {
+      "type": "richtext",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "directionsLink": {
+      "type": "string"
+    },
+    "twitterLink": {
+      "type": "string",
+      "required": false
+    },
+    "facebookLink": {
+      "type": "string",
+      "required": false
+    },
+    "InstagramLink": {
+      "type": "string",
+      "required": false
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "images.gallery"
+    }
+  }
+}

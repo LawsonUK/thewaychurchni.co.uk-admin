@@ -18,14 +18,15 @@
       "plugin": "upload",
       "required": true
     },
-    "bannerText": {
-      "type": "string",
-      "required": true
-    },
     "headerText": {
       "type": "string",
       "private": false,
       "required": true
+    },
+    "bannerText": {
+      "type": "richtext",
+      "required": true,
+      "maxLength": 80
     }
   }
 }

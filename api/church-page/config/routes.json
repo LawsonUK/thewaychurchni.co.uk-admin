@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/church-page",
+      "handler": "church-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/church-page",
+      "handler": "church-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/church-page",
+      "handler": "church-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

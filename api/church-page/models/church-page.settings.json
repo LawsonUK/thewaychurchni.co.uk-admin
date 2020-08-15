@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "church_pages",
+  "info": {
+    "name": "church page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "images.gallery",
+      "required": true,
+      "min": 5
+    },
+    "ourStory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "text.title-and-text",
+      "required": true
+    },
+    "beliefTitle": {
+      "type": "string",
+      "required": true
+    },
+    "beliefs": {
+      "type": "dynamiczone",
+      "components": [
+        "text.title-and-text"
+      ],
+      "required": true
+    },
+    "whatToExpect": {
+      "type": "component",
+      "repeatable": false,
+      "component": "text.title-and-text",
+      "required": true
+    }
+  }
+}
