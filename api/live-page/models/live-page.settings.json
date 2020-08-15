@@ -20,6 +20,10 @@
     "videoLink": {
       "type": "string",
       "required": true
+    },
+    "fbAppId": {
+      "type": "string",
+      "required": true
     }
   }
 }
