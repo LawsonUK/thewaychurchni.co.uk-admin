@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_posts",
+  "info": {
+    "name": "media post"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "publishedOn": {
+      "type": "datetime",
+      "required": true
+    },
+    "excerpt": {
+      "type": "text",
+      "required": true
+    },
+    "featuredImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "videoLink": {
+      "type": "string"
+    },
+    "audioFile": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "teacher": {
+      "model": "teacher",
+      "via": "media_posts"
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
