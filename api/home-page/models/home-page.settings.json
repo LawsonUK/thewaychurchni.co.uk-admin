@@ -24,9 +24,8 @@
       "required": true
     },
     "bannerText": {
-      "type": "richtext",
-      "required": true,
-      "maxLength": 80
+      "type": "text",
+      "required": true
     }
   }
 }

@@ -24,6 +24,10 @@
     "fbAppId": {
       "type": "string",
       "required": true
+    },
+    "liveState": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
