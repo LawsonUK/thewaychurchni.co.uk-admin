@@ -8,16 +8,19 @@
 const slugify = require("slugify");
 
 module.exports = {
-  beforeSave: async (model) => {
-    if (model.title) {
-      model.slug = slugify(model.title);
-    }
-  },
-  beforeUpdate: async (model) => {
-    if (model.getUpdate() && model.getUpdate().title) {
-      model.update({
-        slug: slugify(model.getUpdate().title),
-      });
-    }
+  /**
+   * Triggered before user creation.
+   */
+  lifecycles: {
+    async beforeCreate(data) {
+      if (data.title) {
+        data.slug = slugify(data.title, { lower: true });
+      }
+    },
+    async beforeUpdate(params, data) {
+      if (data.title) {
+        data.slug = slugify(data.title, { lower: true });
+      }
+    },
   },
 };
