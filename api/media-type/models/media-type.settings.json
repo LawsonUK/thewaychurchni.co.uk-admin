@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "media_types",
+  "info": {
+    "name": "media type"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "media_posts": {
+      "via": "media_type",
+      "collection": "media-post"
+    }
+  }
+}

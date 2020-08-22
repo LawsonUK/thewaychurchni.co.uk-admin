@@ -52,6 +52,10 @@
     "slug": {
       "type": "string",
       "required": false
+    },
+    "media_type": {
+      "model": "media-type",
+      "via": "media_posts"
     }
   }
 }
