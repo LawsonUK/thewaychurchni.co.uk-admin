@@ -39,7 +39,8 @@
     },
     "slug": {
       "type": "string",
-      "required": false
+      "required": false,
+      "unique": true
     }
   }
 }
