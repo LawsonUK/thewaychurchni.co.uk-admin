@@ -41,6 +41,10 @@
       "type": "string",
       "required": false,
       "unique": true
+    },
+    "published": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

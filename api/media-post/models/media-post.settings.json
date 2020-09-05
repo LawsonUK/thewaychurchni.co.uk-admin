@@ -57,6 +57,10 @@
     "media_type": {
       "model": "media-type",
       "via": "media_posts"
+    },
+    "published": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
