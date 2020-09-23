@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "church_pages",
+  "collectionName": "about_pages",
   "info": {
-    "name": "church page"
+    "name": "about page"
   },
   "options": {
     "increments": true,
@@ -35,14 +35,6 @@
       "type": "component",
       "repeatable": true,
       "component": "content.title-text",
-      "required": true
-    },
-    "whatToExpectTitle": {
-      "type": "string",
-      "required": true
-    },
-    "whatToExpectText": {
-      "type": "text",
       "required": true
     },
     "team": {
