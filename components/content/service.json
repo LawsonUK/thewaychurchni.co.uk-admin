@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_content_services",
+  "info": {
+    "name": "service",
+    "icon": "user-friends"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "when": {
+      "type": "string",
+      "required": true
+    },
+    "where": {
+      "type": "string",
+      "required": true
+    },
+    "directionsLink": {
+      "type": "string"
+    }
+  }
+}

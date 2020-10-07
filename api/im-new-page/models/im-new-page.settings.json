@@ -21,6 +21,11 @@
     "whatToExpectText": {
       "type": "text",
       "required": true
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.service"
     }
   }
 }
