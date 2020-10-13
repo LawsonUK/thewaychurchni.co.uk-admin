@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "media_posts",
   "info": {
-    "name": "media post"
+    "name": "media post",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -64,6 +66,14 @@
     },
     "featured": {
       "type": "boolean"
+    },
+    "videoOrientation": {
+      "type": "enumeration",
+      "enum": [
+        "Landscape",
+        "Portrait"
+      ],
+      "required": true
     }
   }
 }
