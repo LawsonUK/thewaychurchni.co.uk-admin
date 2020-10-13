@@ -48,8 +48,8 @@
       "type": "richtext"
     },
     "teacher": {
-      "model": "teacher",
-      "via": "media_posts"
+      "via": "media_posts",
+      "model": "teacher"
     },
     "slug": {
       "type": "string",

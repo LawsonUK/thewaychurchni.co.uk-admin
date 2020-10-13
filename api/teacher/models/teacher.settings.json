@@ -2,11 +2,13 @@
   "kind": "collectionType",
   "collectionName": "teachers",
   "info": {
-    "name": "teacher"
+    "name": "teacher",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "name": {
@@ -20,11 +22,11 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     },
     "media_posts": {
-      "via": "teacher",
-      "collection": "media-post"
+      "collection": "media-post",
+      "via": "teacher"
     }
   }
 }

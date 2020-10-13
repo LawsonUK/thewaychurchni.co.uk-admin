@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "live_pages",
   "info": {
-    "name": "live page"
+    "name": "live page",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -21,13 +23,16 @@
       "type": "string",
       "required": true
     },
-    "fbAppId": {
-      "type": "string",
-      "required": true
-    },
     "liveState": {
       "type": "boolean",
       "default": false
+    },
+    "videoOrientation": {
+      "type": "enumeration",
+      "enum": [
+        "Landscape",
+        "Portrait"
+      ]
     }
   }
 }
