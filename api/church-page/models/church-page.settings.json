@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "about_pages",
   "info": {
-    "name": "about page"
+    "name": "about page",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "title": {
@@ -42,6 +44,11 @@
       "repeatable": true,
       "component": "content.image-title-text",
       "required": true
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "content.title-text"
     }
   }
 }
