@@ -35,21 +35,12 @@
     "videoLink": {
       "type": "string"
     },
-    "audioFile": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "description": {
       "type": "richtext"
     },
     "teacher": {
-      "via": "media_posts",
-      "model": "teacher"
+      "model": "teacher",
+      "via": "media_posts"
     },
     "slug": {
       "type": "string",
@@ -74,6 +65,9 @@
         "Portrait"
       ],
       "required": true
+    },
+    "audioLink": {
+      "type": "string"
     }
   }
 }
