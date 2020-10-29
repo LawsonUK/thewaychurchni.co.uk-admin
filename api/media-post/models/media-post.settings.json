@@ -68,9 +68,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "test": {
-      "type": "string"
     }
   }
 }
