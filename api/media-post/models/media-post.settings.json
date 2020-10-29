@@ -60,14 +60,14 @@
     "audioLink": {
       "type": "string"
     },
-    "image": {
+    "mediaImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": false
     }
   }
 }
