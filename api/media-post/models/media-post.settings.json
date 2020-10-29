@@ -23,15 +23,6 @@
       "type": "text",
       "required": true
     },
-    "featuredImage": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false
-    },
     "videoLink": {
       "type": "string"
     },
@@ -68,6 +59,15 @@
     },
     "audioLink": {
       "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
     }
   }
 }
