@@ -2,11 +2,13 @@
   "kind": "singleType",
   "collectionName": "home_pages",
   "info": {
-    "name": "home page"
+    "name": "home page",
+    "description": ""
   },
   "options": {
     "increments": true,
-    "timestamps": true
+    "timestamps": true,
+    "draftAndPublish": false
   },
   "attributes": {
     "bannerImage": {
@@ -16,16 +18,20 @@
         "images"
       ],
       "plugin": "upload",
-      "required": true
+      "required": true,
+      "pluginOptions": {}
     },
     "headerText": {
       "type": "string",
       "private": false,
-      "required": true
+      "required": false
     },
     "bannerText": {
       "type": "text",
-      "required": true
+      "required": false
+    },
+    "moreLink": {
+      "type": "string"
     }
   }
 }
